@@ -3,7 +3,9 @@
 由于我使用clangd作为语言服务器，同时启用两个语言服务器会发生冲突，所以禁用了intellisense, 导致其对应的代码格式化工具无法工作，这就是后面我不断尝试修改这里的格式配置但是对代码格式化行为根本没有影响的原因。
 clangd带来的格式化工具为clangd， 似乎只支持用.clang-format文件作为代码格式化风格配置，如果没有就使用默认配置，默认配置中，c/c++代码缩进只有两格，这让我很不习惯，所以才打算自定义。
 还可以安装Clang-Format作为格式化工具，同样需要提前安装clang-format在自己的系统上，如果通过vscode连接wsl，需要保证在vscode的终端中可以通过clang-format运行这个程序即可，这个插件可以自定义代码风格字符串 如上图所示，但是无论如何更改字符串格式，插件都会提示错误，官方仓库没找到相关文档，所以只可以用.clang-format进行格式化配置了。 通过文件进行格式化配置需要保证文件名字为.clang-format, 位于项目的根目录。在格式化时，会不断从当前目录，向父目录查找。
-当同时有几个代码格式化工具时，如上面的clangd和ClangFormat，需要指定一个默认的格式化工具。</p></div><footer class=entry-footer><span title='2025-05-21 00:00:00 +0000 UTC'>May 21, 2025</span>&nbsp;·&nbsp;1 min</footer><a class=entry-link aria-label="post link to 在vscode中为c/cpp代码添加格式化" href=https://ajiankexx.github.io/posts/vscode_format/></a></article></main><footer class=footer><span>&copy; 2025 <a href=https://ajiankexx.github.io/>我的博客</a></span> ·
+当同时有几个代码格式化工具时，如上面的clangd和ClangFormat，需要指定一个默认的格式化工具。
+Reference:
+https://clang.llvm.org/docs/ClangFormat.html</p></div><footer class=entry-footer><span title='2025-05-21 00:00:00 +0000 UTC'>May 21, 2025</span>&nbsp;·&nbsp;1 min</footer><a class=entry-link aria-label="post link to 在vscode中为c/cpp代码添加格式化" href=https://ajiankexx.github.io/posts/vscode_format/></a></article></main><footer class=footer><span>&copy; 2025 <a href=https://ajiankexx.github.io/>我的博客</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
         <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>

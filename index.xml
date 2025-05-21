@@ -11,4 +11,8 @@ I would love to share everything I know.
 &lt;img alt="alt text" loading="lazy" src="image-2.png">
 如上图所示，但是无论如何更改字符串格式，插件都会提示错误，官方仓库没找到相关文档，所以只可以用&lt;code>.clang-format&lt;/code>进行格式化配置了。
 通过文件进行格式化配置需要保证文件名字为&lt;code>.clang-format&lt;/code>, 位于项目的根目录。在格式化时，会不断从当前目录，向父目录查找。&lt;/p>
-&lt;p>当同时有几个代码格式化工具时，如上面的&lt;code>clangd&lt;/code>和&lt;code>ClangFormat&lt;/code>，需要指定一个默认的格式化工具。&lt;/p></description></item></channel></rss>
+&lt;p>当同时有几个代码格式化工具时，如上面的&lt;code>clangd&lt;/code>和&lt;code>ClangFormat&lt;/code>，需要指定一个默认的格式化工具。&lt;/p>
+&lt;p>Reference:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://clang.llvm.org/docs/ClangFormat.html">https://clang.llvm.org/docs/ClangFormat.html&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>
